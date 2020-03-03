@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Vowel/Consonant End <= 0.5\ngini = 0.491\nsamples = 807\nvalue = [457, 350]"] ;
+1 [label="Short/Long Name <= 0.5\ngini = 0.439\nsamples = 448\nvalue = [146, 302]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Vowel/Consonant Start <= 0.5\ngini = 0.461\nsamples = 261\nvalue = [94, 167]"] ;
+1 -> 2 ;
+3 [label="gini = 0.462\nsamples = 226\nvalue = [82, 144]"] ;
+2 -> 3 ;
+4 [label="gini = 0.451\nsamples = 35\nvalue = [12, 23]"] ;
+2 -> 4 ;
+5 [label="Vowel/Consonant Start <= 0.5\ngini = 0.401\nsamples = 187\nvalue = [52, 135]"] ;
+1 -> 5 ;
+6 [label="gini = 0.406\nsamples = 127\nvalue = [36, 91]"] ;
+5 -> 6 ;
+7 [label="gini = 0.391\nsamples = 60\nvalue = [16, 44]"] ;
+5 -> 7 ;
+8 [label="Short/Long Name <= 0.5\ngini = 0.232\nsamples = 359\nvalue = [311, 48]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Vowel/Consonant Start <= 0.5\ngini = 0.174\nsamples = 197\nvalue = [178, 19]"] ;
+8 -> 9 ;
+10 [label="gini = 0.154\nsamples = 167\nvalue = [153, 14]"] ;
+9 -> 10 ;
+11 [label="gini = 0.278\nsamples = 30\nvalue = [25, 5]"] ;
+9 -> 11 ;
+12 [label="Vowel/Consonant Start <= 0.5\ngini = 0.294\nsamples = 162\nvalue = [133, 29]"] ;
+8 -> 12 ;
+13 [label="gini = 0.285\nsamples = 128\nvalue = [106, 22]"] ;
+12 -> 13 ;
+14 [label="gini = 0.327\nsamples = 34\nvalue = [27, 7]"] ;
+12 -> 14 ;
+}

@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Feature End <= 0.5\ngini = 0.462\nsamples = 75111\nvalue = [47904, 27207]"] ;
+1 [label="Short/Long Name <= 0.5\ngini = 0.178\nsamples = 34030\nvalue = [30664, 3366]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.144\nsamples = 19069\nvalue = [17583, 1486]"] ;
+1 -> 2 ;
+3 [label="gini = 0.22\nsamples = 14961\nvalue = [13081, 1880]"] ;
+1 -> 3 ;
+4 [label="Short/Long Name <= 0.5\ngini = 0.487\nsamples = 41081\nvalue = [17240, 23841]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="Vowel/Consonant Start <= 0.5\ngini = 0.499\nsamples = 17681\nvalue = [8383, 9298]"] ;
+4 -> 5 ;
+6 [label="gini = 0.499\nsamples = 15399\nvalue = [7405, 7994]"] ;
+5 -> 6 ;
+7 [label="gini = 0.49\nsamples = 2282\nvalue = [978, 1304]"] ;
+5 -> 7 ;
+8 [label="Vowel/Consonant Start <= 0.5\ngini = 0.47\nsamples = 23400\nvalue = [8857, 14543]"] ;
+4 -> 8 ;
+9 [label="gini = 0.447\nsamples = 19533\nvalue = [6591, 12942]"] ;
+8 -> 9 ;
+10 [label="gini = 0.485\nsamples = 3867\nvalue = [2266, 1601]"] ;
+8 -> 10 ;
+}
